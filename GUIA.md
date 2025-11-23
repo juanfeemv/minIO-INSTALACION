@@ -29,7 +29,7 @@ Ejecuta el siguiente comando para levantar MinIO (reemplaza usuario/contraseña 
 sudo docker run -d \
   -p 9000:9000 -p 9001:9001 \
   -e "MINIO_ROOT_USER=menav" \
-  -e "MINIO_ROOT_PASSWORD=nevado2005" \
+  -e "MINIO_ROOT_PASSWORD=prueba" \
   -v ~/minIO/data:/data \
   --name minio_local \
   minio/minio server /data --console-address ":9001"
@@ -75,7 +75,7 @@ Crea un archivo llamado `.env` en la raíz del proyecto para guardar tus credenc
 ```ini
 MINIO_ENDPOINT=http://localhost:9000
 MINIO_ROOT_USER=menav
-MINIO_ROOT_PASSWORD=nevado2005
+MINIO_ROOT_PASSWORD=prueba
 BUCKET_NAME=mi-bucket
 ```
 
